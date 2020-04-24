@@ -36,22 +36,21 @@ augroup Header
   au BufNewFile *.h 0r ~/.vim/templates/skeleton.h
 augroup end
 
+"WIP to load different makefiles depending on the file present in
+"the open directory
 augroup Makefile
   if filereadable("main.c")
     au BufNewFile Makefile,makefile 0r ~/.vim/templates/skeleton.makec
   endif
 
 augroup Latex
-  " Load template
+  "Load template
   au BufNewFile *.tex 0r ~/.vim/templates/skeleton.tex
-  
-  " Load colorscheme 
-  "au BufReadPre *.tex colorscheme dracula
  
- " Compile on write
+ "Compile on write
   au BufWritePost main.tex silent execute "!sh $HOME/.vim/scripts/auto_latex %:t %:p:r --display"
  
- " Close upon leave
+ "Close upon leave
   au VimLeave main.tex execute "!sh $HOME/.vim/scripts/auto_latex %:t %:p:r --clean"
 augroup end
 
