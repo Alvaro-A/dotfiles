@@ -81,9 +81,9 @@ bspc rule -a kitty:tiled          state=tiled
 bspc rule -a Zathura              state=tiled
 bspc rule -a ru-turikhay-tlauncher-bootstrap-Bootstrap  state=floating
 
-# - - - - - - - -
+# - - - - - - - - - - - - -
 # Compositor and Wallpaper
-# - - - - - - - -
+# - - - - - - - - - - - - -
 
 feh --bg-fill $HOME/Pictures/Wallpapers/full-moon-night.png
 

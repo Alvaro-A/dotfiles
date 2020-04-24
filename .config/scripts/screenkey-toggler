@@ -1,4 +1,9 @@
 #!/bin/sh
+# Author: Álvaro Schachner
+# alvarolegit@gmail.com
+
+# Screenkey toggler: Script that opens Screenkey it it's not
+# open, and closes it if it's open
 
 if pgrep screenkey >/dev/null 2>&1;
   then

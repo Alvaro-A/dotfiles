@@ -1,4 +1,22 @@
 #!/bin/sh
+# Author: Álvaro Schachner
+# alvarolegit@gmail.com
+
+# NetworkManager script for polybar
+# Dependencies: ttf-font-awesome networkmanager
+
+# When receiving the '--display' argument
+# it displays a white wifi icon if if there's an active
+# wifi connection, and a greyish icon if there's not an
+# active connection
+
+# When receiving the '--switch' argument
+# if there's an active wifi connection it disables it
+# if there's not it enables it
+
+# if the wifi was already enabled but there's not
+# an active connection it will not disable it
+
 display() {
   if ping -q -c 1 -W 1 8.8.8.8 >/dev/null 2>&1;
   then

@@ -1,6 +1,6 @@
-# - - - - - - - -
+# - - - - - - - - - - - -
 # wm independent hotkeys
-# - - - - - - - -
+# - - - - - - - - - - - -
 
 # terminal emulator
 ctrl + alt + t
@@ -130,9 +130,9 @@ ctrl + super + alt + {Left,Down,Up,Right}
 super  + ctrl + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# - - - - - - - -
+# - - - - - - - - -
 # custom shortcuts
-# - - - - - - - -
+# - - - - - - - - -
 
 # file manager
 super + e

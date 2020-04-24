@@ -1,4 +1,8 @@
 #!/bin/sh
+# Script made for the Bluetooth polybar module, cloned from
+# https://github.com/msaitz/polybar-bluetooth
+# Modified by Álvaro Schachner, to unify the scrpt in one file
+
 display() {
   if [ $(bluetoothctl show | grep "Powered: yes" | wc -c) -eq 0 ]
   then
