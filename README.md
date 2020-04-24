@@ -8,7 +8,7 @@ dependencies and other assets.<br/><br/>
 
 <!-- Contents -->
 ## Content
-- [Cloning this repo](#cloning-this-repo)
+- [Cloning this repo](#cloning-this-repo-experimental)
 
 - [Dependencies](#dependencies)
   - bspwm
@@ -25,7 +25,7 @@ dependencies and other assets.<br/><br/>
 - [Preview](#preview)
 
 <!-- Cloning -->
-## Cloning this repo
+## Cloning this repo (experimental)
 
 The folowing steps were based from
 [this article](https://www.atlassian.com/git/tutorials/dotfiles)
@@ -122,3 +122,6 @@ Cloned from [this repo](https://github.com/msaitz/polybar-bluetooth)
 <!-- Preview -->
 ## Preview
 
+![alt text](Pictures/Rice/P1.png)
+![alt text](Pictures/Rice/P2.png)
+![alt text](Pictures/Rice/P3.png)
