@@ -125,3 +125,4 @@ Cloned from [this repo](https://github.com/msaitz/polybar-bluetooth)
 ![alt text](Pictures/Rice/P1.png)
 ![alt text](Pictures/Rice/P2.png)
 ![alt text](Pictures/Rice/P3.png)
+
