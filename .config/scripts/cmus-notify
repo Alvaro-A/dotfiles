@@ -1,0 +1,24 @@
+#!/bin/sh
+current () {
+  notify-send \
+    "Current Song" \
+    "$( cmus-remote -C status |
+     grep file |
+     cut -c $(( $(
+          cmus-remote -C status |
+          grep -Eo '/{1}([A-Z]|[a-z]|[0-9]|/)*/{1}' |
+          wc -m
+          )+5
+        ))-
+      )"
+}
+
+main () {
+  if [ $1 = "--current" ]
+  then
+    current "$@"
+  fi
+}
+
+main "$@"
+
