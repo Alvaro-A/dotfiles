@@ -27,7 +27,7 @@ dependencies and other assets.<br/><br/>
 <!-- Cloning -->
 ## Cloning this repo (experimental)
 
-The folowing steps were based from
+The folowing steps were based of
 [this article](https://www.atlassian.com/git/tutorials/dotfiles)
 consider giving it a read if you also want to create a bare repository 
 to store your dotfiles.
