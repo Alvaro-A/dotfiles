@@ -27,13 +27,12 @@ xinput --set-prop pointer:"Razer Razer DeathAdder Elite" \
 # Autostart
 # - - - - - - - -
 
-nemo -n                         # File manager
-sxhkd &                         # Keybord shortcuts
-fcitx &                         # Keyboard IME
-dunst &                         # Notification mgr
-flameshot &                     # Screenshot mgr
-start-pulseaudio-x11            # Audio
-$HOME/.config/polybar/launch.sh # Bar
+sxhkd &                           # Keybord shortcuts
+fcitx &                           # Keyboard IME
+dunst &                           # Notification mgr
+flameshot &                       # Screenshot mgr
+start-pulseaudio-x11              # Audio
+$HOME/.config/polybar/launch.sh & # Bar
 
 # - - - - - - - -
 # Monitors
@@ -97,5 +96,5 @@ picom --no-dock-shadow &
 # - - - - - - - -
 
 $HOME/.config/scripts/betterlockscreen -w dim
-source ~/.fehbg
+source ~/.fehbg 
 

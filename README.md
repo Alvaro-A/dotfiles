@@ -86,9 +86,16 @@ method and package names may vary by the distro you're using.
 ### bspwm:
 #### Wallpaper
 - feh
-- [this script](https://github.com/rstacruz/feh-blur-wallpaper)
 - wmctrl
-- graphicsmagik
+- graphicsmagick
+- [this script](https://github.com/rstacruz/feh-blur-wallpaper)
+to blur the background
+- [this other script](https://github.com/rstacruz/feh-blur-wallpaper)
+for a cool lockscreen<br/>
+
+Both scripts are in `.config/scripts` inside this repo, but shoutouts to
+those people flor their amazing work. They may also have additional
+installation steps so be sure to check them out
 
 #### xorg utilities
 - xorg-xev
@@ -106,7 +113,7 @@ method and package names may vary by the distro you're using.
 ### Polybar:
 #### Fonts
 - otf-ipafont
-- otf-firacode
+- otf-fira-code
 - ttf-font-awesome
 
 #### Rofi statusbar
