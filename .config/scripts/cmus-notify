@@ -3,23 +3,24 @@
 # alvarolegit@gmail.com
 
 # Cmus notify: automated portable script that get's the current
-# song's file name, without caring about it's location
-# functionalities migth be added in the future
+# song's file name, without caring about it's location, since
+# many scrpits only work if the songs are in ~/music
+
+# Functionalities migth be added in the future
 
 current () {
-  # Display the current song (File name)
-  # It works this way:
-  # - Looks the directory of the currently playing song with regex and gets the length
-  # - Sums 5 to the length
+  # Display the current song (File name), this method:
+  # - Looks the directory of the currently playing song with cmus satus and regex to get the length
+  # - Sums 5 to the length (because cmus status prints "file " and we don't want that)
   # - Gets the song cmus status
-  # - Only filters the line with the directory
+  # - Only filters the line with the full directory
   # - Cuts the previously calculated sum to only leave the file name
 
   notify-send \
     "Current Song" \
     "$( cmus-remote -C status |
-     grep file |
-     cut -c $(( $(
+      grep file |
+      cut -c $(( $(
           cmus-remote -C status |
           grep -Eo '/{1}([A-Z]|[a-z]|[0-9]|/)*/{1}' |
           wc -m

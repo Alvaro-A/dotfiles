@@ -17,7 +17,7 @@ colorscheme dracula
 "colorscheme one
 
 set path+=**
-set runtimepath^=~/.vim/bundle/goyo.vim
+set runtimepath^=~/.vim/pack/goyo.vim
 
 "Templates
 augroup Py

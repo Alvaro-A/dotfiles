@@ -8,13 +8,6 @@ export VISUAL=vim
 export EDITOR=vim
 
 # - - - - - - - -
-# Nvidia stuff
-# - - - - - - - -
-
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
-
-# - - - - - - - -
 # Cursor
 # - - - - - - - -
 
@@ -57,7 +50,7 @@ bspc config normal_border_color  "#222222"
 # Rules
 # - - - - - - - -
 
-bspc rule -a discord              desktop='^2' border=off
+bspc rule -a discord              desktop='^2' border=off follow=off
 bspc rule -a TelegramDesktop      desktop='^3' border=off
 bspc rule -a firefox              desktop='^4' border=off follow=on
 bspc rule -a OpenBoard            border=off state=tiled follow=on

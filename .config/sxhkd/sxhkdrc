@@ -166,22 +166,22 @@ super + l
   $HOME/.config/scripts/betterlockscreen -l blur
 
 # lower cmus volume
-F7
+alt + F7
   cmus-remote --volume -5%
 
 # raise cmus volume
-F8
+alt + F8
   cmus-remote --volume +5%
 
 # cmus prevous song + notification
-F9
+alt + F9
   cmus-remote --prev && sh $HOME/.config/scripts/cmus-notify --current
 
 # cmus pause song
-F10
+alt + F10
   cmus-remote --pause
 
 # cmus next song + notification
-F11
+alt + F11
   cmus-remote --next && sh $HOME/.config/scripts/cmus-notify --current
 
