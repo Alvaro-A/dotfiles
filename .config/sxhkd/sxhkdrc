@@ -27,7 +27,7 @@ ctrl + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-ctrl + {q,k}
+alt + {q,k}
 	bspc node -{c,k}
 
 # send the newest marked node to the newest preselected node

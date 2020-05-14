@@ -67,6 +67,7 @@ bspc rule -a Nm-connection-editor state=floating
 bspc rule -a vlc                  state=floating 
 bspc rule -a qBittorrent          state=floating
 bspc rule -a dolphin-emu          state=floating
+bspc rule -a Fcitx-config-gtk3    state=floating
 bspc rule -a kitty                state=floating
 bspc rule -a kitty:float          state=floating
 bspc rule -a kitty:tiled          state=tiled

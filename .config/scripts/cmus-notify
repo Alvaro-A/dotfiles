@@ -22,7 +22,7 @@ current () {
       grep file |
       cut -c $(( $(
           cmus-remote -C status |
-          grep -Eo '/{1}([A-Z]|[a-z]|[0-9]|/)*/{1}' |
+          grep -Eo '/{1}([A-Za-z0-9]|/)*/{1}' |
           wc -m
           )+5
         ))-
