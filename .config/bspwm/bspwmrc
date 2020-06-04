@@ -68,6 +68,7 @@ bspc rule -a vlc                  state=floating
 bspc rule -a qBittorrent          state=floating
 bspc rule -a dolphin-emu          state=floating
 bspc rule -a Fcitx-config-gtk3    state=floating
+bspc rule -a PCSX2                state=floating
 bspc rule -a kitty                state=floating
 bspc rule -a kitty:float          state=floating
 bspc rule -a kitty:tiled          state=tiled
@@ -78,7 +79,8 @@ bspc rule -a ru-turikhay-tlauncher-bootstrap-Bootstrap  state=floating
 # Compositor and Wallpaper
 # - - - - - - - - - - - - -
 
-feh --bg-fill $HOME/Pictures/Wallpapers/full-moon-night.png
+# To choose a wallpaper run the command
+# ./path/to/betterlockscreen -u path/to/wallpaper -(w|r|b|t)
 
 $HOME/.config/scripts/feh-blur -s
 $HOME/.config/scripts/feh-blur -d -b 4

@@ -36,11 +36,16 @@ augroup Header
   au BufNewFile *.h 0r ~/.vim/templates/skeleton.h
 augroup end
 
-"WIP to load different makefiles depending on the file present in
-"the open directory
 augroup Makefile
+  au BufNewFile Makefile,makefile set noexpandtab
+  au BufRead Makefile,makefile set noexpandtab
+
   if filereadable("main.c")
     au BufNewFile Makefile,makefile 0r ~/.vim/templates/skeleton.makec
+  endif
+
+  if filereadable("main.cpp")
+    au BufNewFile Makefile,makefile 0r ~/.vim/templates/skeleton.makecpp
   endif
 
 augroup Latex

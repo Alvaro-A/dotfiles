@@ -94,6 +94,14 @@ ctrl + alt + Right
   bspc node -d next.local; \
   bspc desktop -f next.local
 
+# rotate desktop nodes 180 degrees
+super + shift + r
+  bspc node @/ -R 180
+
+# rotate parent node 90 degrees
+super + r
+  bspc node @parent -R 90
+
 # - - - - - - - -
 # preselect
 # - - - - - - - -
